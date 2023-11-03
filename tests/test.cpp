@@ -1,23 +1,28 @@
 #include "gtest/gtest.h"
 #include "../header/rectangle.hpp"
 
-TEST(TestRectangle, TestConstructor)
+TEST(RectangleTests, TestConstructor)
 {
-    Rectangle *rect1 = new Rectangle(1, 1);
-    EXPECT_EQ(1, rect1->width);
-    EXPECT_EQ(1, rect1->height);
+    Rectangle *recttest = new Rectangle(1, 1);
+    EXPECT_EQ(1, recttest->get_width());
+    EXPECT_EQ(1, recttest->get_height());
 }
 
-TEST(TestRectangle, TestArea)
+TEST(RectangleTests, TestArea)
 {
-    Rectangle *rect1 = new Rectangle(1, 1);
-    EXPECT_EQ(1, rect1->area());
+    Rectangle *recttest = new Rectangle(1, 1);
+    EXPECT_EQ(1, recttest->area());
 
 }
 
-TEST(TestRectangle, TestArea)
+TEST(RectangleTests, TestPerimeter)
 {
-    Rectangle *rect1 = new Rectangle(1, 1);
-    EXPECT_EQ(4, rect1->perimeter());
+    Rectangle *recttest = new Rectangle(1, 1);
+    EXPECT_EQ(4, recttest->perimeter());
 
+}
+
+int runTests(int argc, char* argv[]) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
