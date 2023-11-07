@@ -23,6 +23,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Run command to test Rectangle
       run: |
-        echo cmake .
-        echo make
-        echo ./bin/runAllTests
+        cmake .
+        make
+        ./bin/runAllTests
