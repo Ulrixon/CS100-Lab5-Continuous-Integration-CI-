@@ -29,7 +29,7 @@ int Rectangle::area()
     return this->width * this->height;
 }
 
-int Rectangle::perimeter()
+int Rectangle::perimeter() // going to fail because of wrong implementation
 {
     return 2;
 }

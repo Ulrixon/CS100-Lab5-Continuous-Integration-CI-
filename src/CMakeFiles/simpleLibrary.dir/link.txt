@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsimpleLibrary.a CMakeFiles/simpleLibrary.dir/rectangle.cpp.o CMakeFiles/simpleLibrary.dir/main.cpp.o
+/usr/bin/ranlib libsimpleLibrary.a
