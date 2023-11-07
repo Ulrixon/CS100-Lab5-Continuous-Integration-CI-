@@ -1,7 +1,7 @@
 name: CI
 on:
   push:
-    branches: [ main, cchua042/ci_setup, cchua042/failing_tests]
+    branches: [ main, cchua042/ci_setup, cchua042/failing_tests, cchua042/passing_tests ]
   pull_request:
     branches: [ main ]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
