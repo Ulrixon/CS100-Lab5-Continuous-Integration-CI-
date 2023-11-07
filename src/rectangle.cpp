@@ -31,5 +31,5 @@ int Rectangle::area()
 
 int Rectangle::perimeter()
 {
-    return 2 * (width + height);
+    return 2;
 }
